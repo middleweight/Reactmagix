@@ -1,2 +1,0 @@
-# Reactmagix
-Created with CodeSandbox
