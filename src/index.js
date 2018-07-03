@@ -33,7 +33,8 @@ function magicianPic (avatar) {
    return <p> Picture: {avatar} </p>
  }
 }
-// turnery operator
+// 1 turnery operator name
+// Logical && operator dob
 function App() {
   return (
     <div className="App">
@@ -42,7 +43,7 @@ function App() {
       <h3>{getLocation(magician.location)}</h3>
       {magicianPic(magician.avatar)}
       {(magician.dob && magician.dob < 50) && <p>Age: {magician.dob}</p>}
-      
+
     </div>
   );
 }
