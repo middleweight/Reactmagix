@@ -40,7 +40,7 @@ function App() {
       <h2>{magician.skill}</h2>
       <h3>{getLocation(magician.location)} </h3>
       {magicianPic(magician.avatar)}
-      {magician.dob < 18 && <p> Unknown DOB </p>}
+      {(magician.dob && magician.dob < 50) && <p>Age: {magician.dob}</p>}
     </div>
   );
 }
