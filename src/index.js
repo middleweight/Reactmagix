@@ -7,14 +7,16 @@ var magician = {
   name: "Hoodini",
   skill: "Escape",
   location: "",
-  avatar: "dini.png"
+  avatar: "dini.png",
+  dob: 30
 };
 
 var assistant = {
   name: "Jessie",
   skill: "Dance",
   location: "Liverpool",
-  avatar: "girl.png"
+  avatar: "girl.png",
+  dob: 23
 }
 
 function getLocation(location) {
@@ -38,6 +40,7 @@ function App() {
       <h2>{magician.skill}</h2>
       <h3>{getLocation(magician.location)} </h3>
       {magicianPic(magician.avatar)}
+      {magician.dob < 18 && <p> Unknown DOB </p>}
     </div>
   );
 }
