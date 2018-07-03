@@ -8,7 +8,8 @@ var magician = {
   skill: "Escape",
   location: "",
   avatar: "dini.png",
-  dob: 30
+  dob: 30,
+  specials: [1,2,3]
 };
 
 var assistant = {
@@ -38,9 +39,10 @@ function App() {
     <div className="App">
       <h1>{magician.name ? magician.name : "Name hidden"}</h1>
       <h2>{magician.skill}</h2>
-      <h3>{getLocation(magician.location)} </h3>
+      <h3>{getLocation(magician.location)}</h3>
       {magicianPic(magician.avatar)}
       {(magician.dob && magician.dob < 50) && <p>Age: {magician.dob}</p>}
+      
     </div>
   );
 }
